@@ -6,6 +6,7 @@ from PIL import Image
 from torchvision.transforms import RandomCrop
 import torchvision.transforms.functional as T
 import glob
+import torch.nn.functional as F
 
 def pad_image_needed(img, size):
     width, height = T.get_image_size(img)
