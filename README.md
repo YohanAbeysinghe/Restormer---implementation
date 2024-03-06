@@ -7,4 +7,5 @@ A PyTorch implementation of Restormer based on CVPR 2022 paper
 ![Network Architecture](figs/image.png)
 
 
-The training was done using Tesla A100 in Google Colab.
+The training was done only for the Deraining task using Tesla A100 in Google Colab. Due to the high requirement of GPU memory, the `batch_size` and `patch_size` was reduced. 
+
