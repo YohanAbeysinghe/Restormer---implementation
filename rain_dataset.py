@@ -1,12 +1,13 @@
 import os
+import glob
 import torch
-from torch.utils.data import Dataset
-from torchvision import transforms
 from PIL import Image
+import torch.nn.functional as F
+from torchvision import transforms
+from torch.utils.data import Dataset
 from torchvision.transforms import RandomCrop
 import torchvision.transforms.functional as T
-import glob
-import torch.nn.functional as F
+
 
 def pad_image_needed(img, size):
     width, height = T.get_image_size(img)
